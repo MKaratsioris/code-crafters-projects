@@ -32,8 +32,9 @@ def handle_request(client_socket: socket) -> None:
     client_socket.sendall(response.encode())
 
 
-def main():
-    server_socket = create_server(("localhost", 4221), reuse_port=True)
+def main() -> None:
+    """ """
+    server_socket: socket = create_server(("localhost", 4221), reuse_port=True)
     print("[HTTP Server] Running on localhost:4221")
     try:
         while True:

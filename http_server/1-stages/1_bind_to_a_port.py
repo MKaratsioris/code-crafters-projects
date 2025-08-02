@@ -1,7 +1,10 @@
-import socket  # noqa: F401
+from socket import socket, create_server
 
-def main():
-    server_socket = socket.create_server(("localhost", 4221), reuse_port=True)
+# TODO Create a class to encapsulate the functionality
+
+def main() -> None:
+    """ """
+    server_socket: socket = create_server(("localhost", 4221), reuse_port=True)
     print("HTTP Server is running on localhost:4221")
     try:
         while True:
