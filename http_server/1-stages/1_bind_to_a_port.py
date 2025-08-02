@@ -1,7 +1,5 @@
 from socket import socket, create_server
 
-# TODO Create a class to encapsulate the functionality
-
 def main() -> None:
     """ """
     server_socket: socket = create_server(("localhost", 4221), reuse_port=True)

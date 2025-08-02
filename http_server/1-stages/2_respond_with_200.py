@@ -1,7 +1,5 @@
 from socket import socket, create_server
 
-# TODO Create a class to encapsulate the functionality
-
 def handle_request(client_socket: socket) -> None:
     """ """
     request: str = client_socket.recv(1_024).decode()

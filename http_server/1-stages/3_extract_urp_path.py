@@ -1,7 +1,5 @@
 from socket import socket, create_server
 
-# TODO Create a class to encapsulate the functionality
-
 def parse_request(data: str) -> tuple[str, str, str]:
     """ """
     lines: list[str] = data.split('\r\n')
